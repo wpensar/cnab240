@@ -1,6 +1,5 @@
 argparse==1.4.0
 backports.shutil-get-terminal-size==1.0.0
-cnab240==0.01
 coverage==4.0.3
 decorator==4.0.9
 ipdb==0.10.0
@@ -15,3 +14,4 @@ six==1.10.0
 traceback2==1.4.0
 traitlets==4.2.1
 unittest2==1.1.0
+tox==2.3.1
