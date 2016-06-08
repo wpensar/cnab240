@@ -3,7 +3,7 @@
 import os
 import codecs
 from decimal import Decimal
-from cnab240.bancos import itau
+from cnab240.bancos import itau, santander
 from cnab240.tipos import Lote, Evento
 
 TESTS_DIRPATH = os.path.abspath(os.path.dirname(__file__))
@@ -61,6 +61,59 @@ def get_itau_data_from_file():
    
     arquivo_remessa.close() 
     return itau_data
+
+def get_santander_data_from_file():
+    santander_data = dict()
+    arquivo_remessa = codecs.open(os.path.join(ARQS_DIRPATH,
+                                     'cobranca.santander.rem'), encoding='ascii')
+
+    santander_data['remessa'] = arquivo_remessa.read()
+    arquivo_remessa.seek(0)
+
+    santander_data['header_arquivo'] = santander.registros.HeaderArquivo()
+    santander_data['header_arquivo_str'] = arquivo_remessa.readline().strip('\r\n')
+    santander_data['header_arquivo'].carregar(santander_data['header_arquivo_str'])
+
+    santander_data['header_lote'] = santander.registros.HeaderLoteCobranca()
+    santander_data['header_lote_str'] = arquivo_remessa.readline().strip('\r\n')
+    santander_data['header_lote'].carregar(santander_data['header_lote_str'])
+
+    santander_data['seg_p1'] = santander.registros.SegmentoP()
+    santander_data['seg_p1_str'] = arquivo_remessa.readline().strip('\r\n')
+    santander_data['seg_p1'].carregar(santander_data['seg_p1_str'])
+
+    santander_data['seg_q1'] = santander.registros.SegmentoQ()
+    santander_data['seg_q1_str'] = arquivo_remessa.readline().strip('\r\n')
+    santander_data['seg_q1'].carregar(santander_data['seg_q1_str'])
+
+    santander_data['seg_p2'] = santander.registros.SegmentoP()
+    santander_data['seg_p2_str'] = arquivo_remessa.readline().strip('\r\n')
+    santander_data['seg_p2'].carregar(santander_data['seg_p2_str'])
+
+    santander_data['seg_q2'] = santander.registros.SegmentoQ()
+    santander_data['seg_q2_str'] = arquivo_remessa.readline().strip('\r\n')
+    santander_data['seg_q2'].carregar(santander_data['seg_q2_str'])
+
+    santander_data['trailer_lote'] = santander.registros.TrailerLoteCobranca()
+    santander_data['trailer_lote_str'] = arquivo_remessa.readline().strip('\r\n')
+    santander_data['trailer_lote'].carregar(santander_data['trailer_lote_str'])
+
+    santander_data['trailer_arquivo'] = santander.registros.TrailerArquivo()
+    santander_data['trailer_arquivo_str'] = arquivo_remessa.readline().strip('\r\n')
+    santander_data['trailer_arquivo'].carregar(santander_data['trailer_arquivo_str'])
+
+    santander_data['lote_cob'] = Lote(santander, santander_data['header_lote'],
+                                                    santander_data['trailer_lote'])
+    santander_data['evento_cob1'] = Evento(santander, 1)
+    santander_data['evento_cob1'].adicionar_segmento(santander_data['seg_p1'])
+    santander_data['evento_cob1'].adicionar_segmento(santander_data['seg_q1'])
+
+    santander_data['evento_cob2'] = Evento(santander, 1)
+    santander_data['evento_cob2'].adicionar_segmento(santander_data['seg_p2'])
+    santander_data['evento_cob2'].adicionar_segmento(santander_data['seg_q2'])
+
+    arquivo_remessa.close()
+    return santander_data
 
 def get_itau_data_from_dict():
     itau_data = dict()
