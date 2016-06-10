@@ -43,16 +43,16 @@ uninstall: ##@cnab Desinstala pacote CNAB240
 	$(if $(shell pip freeze|grep cnab240), @pip uninstall -y cnab240==0.01, @echo 'O pacote já esta desinstalado!')
 	@hash -r
 
-packages: ##@cnab Desinstala pacote CNAB240
-	@echo 'Desinstalando pacote cnab240...'
+dev-requirements: ##@dev Instala requirements_dev CNAB240
+	@echo 'Instalando modelos dev...'
 	$(if $(shell pip freeze|grep cnab240), @pip install -r requirements_dev.txt, @echo 'O pacotes já estão desinstalado!')
 	@hash -r
 
-tox: ##cnab Testes pelo Tox.
+tox-them-all: ##@dev tox - Rodar todos os testes para o pacote CNAB240
 	@echo 'tox, testando...'
 	$(if $(shell pip freeze|grep tox), @tox, @pip install tox)
 
-test-them-all: ##@cnab Rodar todos os testes para o pacote CNAB240
+unittest-them-all: ##@dev unittest - Rodar todos os testes para o pacote CNAB240
 	@echo 'WOW, testando!!!'
 	@python -m unittest discover || unit2 discover
 
