@@ -48,8 +48,12 @@ packages: ##@cnab Desinstala pacote CNAB240
 	$(if $(shell pip freeze|grep cnab240), @pip install -r requirements_dev.txt, @echo 'O pacotes já estão desinstalado!')
 	@hash -r
 
+tox: ##cnab Testes pelo Tox.
+	@echo 'tox, testando...'
+	$(if $(shell pip freeze|grep tox), @tox, @pip install tox)
+
 test-them-all: ##@cnab Rodar todos os testes para o pacote CNAB240
-	@echo 'Wow, testando!!!'
+	@echo 'WOW, testando!!!'
 	@python -m unittest discover || unit2 discover
 
 check-root:
