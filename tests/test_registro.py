@@ -87,8 +87,7 @@ class TestRegistro(unittest.TestCase):
     def test_fromdict(self):
         header_dict = self.header_arquivo.todict()
         header_arquivo = itau.registros.HeaderArquivo(**header_dict)
-        self.assertEqual(header_arquivo.cedente_nome,
-                         'TRACY TECNOLOGIA LTDA ME')
+        self.assertEqual(header_arquivo.cedente_nome, 'TRACY TECNOLOGIA LTDA ME')
         self.assertEqual(header_arquivo.nome_do_banco, 'BANCO ITAU SA')
 
     def test_necessario(self):

@@ -50,7 +50,7 @@ class CampoBase(object):
                 if self.decimais:
                     self.valor = Decimal('{0:0.{1}f}'.format(self.default,
                                                              self.decimais))
-                else:
+                else:   
                     self.valor = self.default
             else:
                 raise errors.CampoObrigatorioError(self.nome)

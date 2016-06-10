@@ -23,7 +23,6 @@ with open(fname) as f:
         else:
             tipo = 'int'
 
-        print((' '* 8) + ':param {0}:'.format(campo_nome))
-        print((' '* 8) + ':type {0}: {1}'.format(campo_nome, tipo))
+        print((' ' * 8) + ':param {0}:'.format(campo_nome))
+        print((' ' * 8) + ':type {0}: {1}'.format(campo_nome, tipo))
         print()
-
