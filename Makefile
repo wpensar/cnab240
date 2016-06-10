@@ -18,7 +18,7 @@ RESET  := $(shell tput -Txterm sgr0)
 HELP_FUN = \
 	%help; \
 	while(<>) { push @{$$help{$$2 // 'options'}}, [$$1, $$3] if /^([a-zA-Z\-]+)\s*:.*\#\#(?:@([a-zA-Z\-]+))?\s(.*)$$/ }; \
-	print "usage: make [target] <param>\n\n"; \
+	print "usage: make [target]\n\n"; \
 	print "WP - Developer Tools\n\n"; \
 	for (sort keys %help) { \
 	print "${WHITE}$$_:${RESET}\n"; \
