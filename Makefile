@@ -33,17 +33,22 @@ help: ##@other Lamento, não posso te ajudar mais que isso! =)
 
 # cnab240
 ##
-install: ##@cnab Instala pacote CNAB240
+install: ##@cnab Instalar pacote CNAB240
 	@echo 'Instalando pacote cnab240...'
 	$(if $(shell pip freeze|grep cnab240), @echo 'O pacote já esta instalado!', @python setup.py install)
 	@hash -r
 
-uninstall: ##@cnab Desinstala pacote CNAB240
+uninstall: ##@cnab Desinstalar pacote CNAB240
 	@echo 'Desinstalando pacote cnab240...'
 	$(if $(shell pip freeze|grep cnab240), @pip uninstall -y cnab240==0.01, @echo 'O pacote já esta desinstalado!')
 	@hash -r
 
-dev-requirements: ##@dev Instala requirements_dev CNAB240
+clear: ##@cnab Remover as pastas; cnab240.egg-info, .tox, build e dist.
+	@echo 'Wipeout...'
+	@rm -rf cnab240.egg-info dist build .tox
+	@hash -r
+
+dev-requirements: ##@dev Instalar requirements_dev CNAB240
 	@echo 'Instalando modelos dev...'
 	$(if $(shell pip freeze|grep cnab240), @pip install -r requirements_dev.txt, @echo 'O pacotes já estão desinstalado!')
 	@hash -r

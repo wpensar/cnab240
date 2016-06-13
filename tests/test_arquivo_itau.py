@@ -41,15 +41,6 @@ class TestCnab240(unittest.TestCase):
         ret_file.seek(0)
         self.assertEqual(ret_file.read(), str(arquivo))
         ret_file.close()
-    @unittest.skip
-    def test_leitura_santander(self):
-        return_file_path = os.path.join(ARQS_DIRPATH, 'cobranca.santander.ret')
-        ret_file = codecs.open(return_file_path, encoding='ascii')
-        arquivo = Arquivo(santander, arquivo=ret_file)
-
-        ret_file.seek(0)
-        self.assertEqual(ret_file.read(), str(arquivo))
-        ret_file.close()
 
 if __name__ == '__main__':
     unittest.main()
