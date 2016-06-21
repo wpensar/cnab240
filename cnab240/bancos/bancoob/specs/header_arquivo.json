@@ -59,8 +59,7 @@
       "nome": "cedente_agencia",
       "posicao_inicio": 53,
       "posicao_fim": 57,
-      "formato": "num",
-      "default": 0
+      "formato": "num"
     },
 
     "09.0": {
@@ -74,8 +73,7 @@
       "nome": "cedente_conta",
       "posicao_inicio": 59,
       "posicao_fim": 70,
-      "formato": "num",
-      "default": ""
+      "formato": "num"
     },
 
     "11.0": {
@@ -96,8 +94,7 @@
       "nome": "cedente_nome",
       "posicao_inicio": 73,
       "posicao_fim": 102,
-      "formato": "alfa",
-      "default": ""
+      "formato": "alfa"
     },
 
     "14.0": {
@@ -109,7 +106,7 @@
     },
 
     "15.0": {
-      "nome": "vazio2 ",
+      "nome": "vazio2",
       "posicao_inicio": 133,
       "posicao_fim": 142,
       "formato": "alfa",
@@ -117,22 +114,6 @@
     },
 
     "16.0": {
-      "nome": "nome_do_banco",
-      "posicao_inicio": 103,
-      "posicao_fim": 132,
-      "formato": "alfa",
-      "default": "BANCO ITAU SA"
-    },
-    
-    "17.0": {
-      "nome": "vazio6",
-      "posicao_inicio": 133,
-      "posicao_fim": 142,
-      "formato": "alfa",
-      "default": ""
-    },
-
-    "18.0": {
       "nome": "arquivo_codigo",
       "posicao_inicio": 143,
       "posicao_fim": 143,
@@ -140,47 +121,63 @@
       "default": 1
     },
 
-    "19.0": {
+    "17.0": {
       "nome": "arquivo_data_de_geracao",
       "posicao_inicio": 144,
       "posicao_fim": 151,
       "formato": "num"
     },
 
-    "20.0": {
+    "18.0": {
       "nome": "arquivo_hora_de_geracao",
       "posicao_inicio": 152,
       "posicao_fim": 157,
       "formato": "num"
     },
 
-    "21.0": {
+    "19.0": {
       "nome": "arquivo_sequencia",
       "posicao_inicio": 158,
       "posicao_fim": 163,
       "formato": "num"
     },
 
-    "22.0": {
+    "20.0": {
       "nome": "arquivo_layout",
       "posicao_inicio": 164,
       "posicao_fim": 166,
       "formato": "num",
-      "default": 40
+      "default": 81
+    },
+
+    "21.0": {
+      "nome": "arquivo_densidade",
+      "posicao_inicio": 167,
+      "posicao_fim": 171,
+      "formato": "num",
+      "default": 0
+    },
+
+    "22.0": {
+      "nome": "vazio3",
+      "posicao_inicio": 172,
+      "posicao_fim": 191,
+      "formato": "alfa",
+      "default": ""
     },
 
     "23.0": {
-      "nome": "vazio7",
-      "posicao_inicio": 167,
-      "posicao_fim": 171,
+      "nome": "vazio4",
+      "posicao_inicio": 192,
+      "posicao_fim": 211,
       "formato": "alfa",
       "default": ""
     },
 
     "24.0": {
-      "nome": "vazio8",
-      "posicao_inicio": 172,
-      "posicao_fim": 225,
+      "nome": "vazio5",
+      "posicao_inicio": 212,
+      "posicao_fim": 240,
       "formato": "alfa",
       "default": ""
     }

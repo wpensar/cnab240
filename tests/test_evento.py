@@ -12,7 +12,7 @@ from tests.data import get_itau_data_from_file
 class TestEvento(unittest.TestCase):
     def setUp(self):
         self.evento = Evento(itau, 1)
-   
+
     def test_getattributes(self):
         self.assertEqual(self.evento._segmentos, [])
 

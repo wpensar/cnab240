@@ -6,7 +6,7 @@
       "posicao_inicio": 1,
       "posicao_fim": 3,
       "formato": "num",
-      "default": 341
+      "default": 756
     },
 
     "02.3P": {
@@ -55,62 +55,51 @@
     },
 
     "08.3P": {
-      "nome": "vazio2",
-      "posicao_inicio": 18,
-      "posicao_fim": 18,
-      "formato": "num",
-      "default": 0
-    },
-
-    "09.3P": {
       "nome": "cedente_agencia",
-      "posicao_inicio": 19,
+      "posicao_inicio": 18,
       "posicao_fim": 22,
       "formato": "num"
     },
 
-    "10.3P": {
-      "nome": "vazio3",
+    "09.3P": {
+      "nome": "cedente_agencia_dv",
       "posicao_inicio": 23,
       "posicao_fim": 23,
-      "formato": "alfa",
-      "default": ""
-    },
-    
-    "11.3P": {
-      "nome": "vazio4",
-      "posicao_inicio": 24,
-      "posicao_fim": 30,
-      "formato": "num",
-      "default": 0
+      "formato": "alfa"
     },
 
-    "12.3P": {
+    "10.3P": {
       "nome": "cedente_conta",
-      "posicao_inicio": 31,
+      "posicao_inicio": 24,
       "posicao_fim": 35,
       "formato": "num"
     },
-
-    "13.3P": {
-      "nome": "vazio5",
+    
+    "11.3P": {
+      "nome": "cedente_conta_dv",
       "posicao_inicio": 36,
       "posicao_fim": 36,
-      "formato": "alfa",
-      "default": ""
+      "formato": "num"
     },
 
-    "14.3P": {
+    "12.3P": {
       "nome": "cedente_agencia_conta_dv",
       "posicao_inicio": 37,
       "posicao_fim": 37,
       "formato": "num"
     },
 
-    "15.3P": {
-      "nome": "carteira_numero",
+    "13.3P": {
+      "nome": "nosso_numero",
       "posicao_inicio": 38,
-      "posicao_fim": 40,
+      "posicao_fim": 57,
+      "formato": "alfa"
+    },
+
+    "14.3P": {
+      "nome": "carteira_numero",
+      "posicao_inicio": 58,
+      "posicao_fim": 58,
       "formato": "num"
     },
 
