@@ -27,7 +27,10 @@ class CampoBase(object):
 
         elif self.decimais:
             if not isinstance(valor, Decimal):
-                raise errors.TipoError(self, valor)
+                try:
+                    valor = Decimal(valor)
+                except TypeError:
+                    raise errors.TipoError(self, valor)
 
             num_decimais = valor.as_tuple().exponent * -1
             if num_decimais != self.decimais:
