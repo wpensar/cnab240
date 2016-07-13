@@ -31,3 +31,6 @@ pip-log.txt
 # Backup files
 *.json~
 *.txt~
+
+include/
+lib/
