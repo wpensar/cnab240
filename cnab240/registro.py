@@ -171,9 +171,13 @@ class Registros(object):
         registro_filepath_list = iglob(os.path.join(specs_dirpath, '*.json'))
 
         for registro_filepath in registro_filepath_list:
-            registro_file = open(registro_filepath)
-            spec = json.load(registro_file)
-            registro_file.close()
+            with open(registro_filepath, encoding='utf-8-sig') as registro_file:
+                spec = json.load(registro_file)
+                registro_file.close()
+
+            # registro_file = open(registro_filepath)
+            # spec = json.load(registro_file.encode("utf-8"))
+            # registro_file.close()
 
             setattr(self, spec.get('nome'), self.criar_classe_registro(spec))
 
