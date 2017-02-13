@@ -1,0 +1,127 @@
+{
+  "nome": "HeaderArquivo",
+  "campos": {
+    "01.0": {
+      "nome": "tipo_registro",
+      "posicao_inicio": 1,
+      "posicao_fim": 1,
+      "formato": "num",
+      "default": 0
+    },
+
+    "02.0": {
+      "nome": "operacao",
+      "posicao_inicio": 2,
+      "posicao_fim": 2,
+      "formato": "num",
+      "default": 1
+    },
+
+    "03.0": {
+      "nome": "literal_remessa",
+      "posicao_inicio": 3,
+      "posicao_fim": 9,
+      "formato": "alfa",
+      "default": "REMESSA"
+    },
+
+    "04.0": {
+      "nome": "codigo_servico",
+      "posicao_inicio": 10,
+      "posicao_fim": 11,
+      "formato": "num",
+      "default": 1
+    },
+
+    "05.0": {
+      "nome": "literal_servico",
+      "posicao_inicio": 12,
+      "posicao_fim": 26,
+      "formato": "alfa",
+      "default": "COBRANCA"
+    },
+
+    "06.0": {
+      "nome": "agencia",
+      "posicao_inicio": 27,
+      "posicao_fim": 30,
+      "formato": "num"
+    },
+
+    "07.0": {
+      "nome": "zeros",
+      "posicao_inicio": 31,
+      "posicao_fim": 32,
+      "formato": "num",
+      "default": 0
+    },
+
+    "08.0": {
+      "nome": "conta",
+      "posicao_inicio": 33,
+      "posicao_fim": 37,
+      "formato": "num"
+    },
+
+    "09.0": {
+      "nome": "dac",
+      "posicao_inicio": 38,
+      "posicao_fim": 38,
+      "formato": "num"
+    },
+
+    "10.0": {
+      "nome": "brancos",
+      "posicao_inicio": 39,
+      "posicao_fim": 46,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "11.0": {
+      "nome": "nome_empresa",
+      "posicao_inicio": 47,
+      "posicao_fim": 76,
+      "formato": "alfa"
+    },
+
+    "12.0": {
+      "nome": "codigo_banco",
+      "posicao_inicio": 77,
+      "posicao_fim": 79,
+      "formato": "num",
+      "default": 341
+    },
+
+    "13.0": {
+      "nome": "nome_banco",
+      "posicao_inicio": 80,
+      "posicao_fim": 94,
+      "formato": "alfa",
+      "default": "BANCO ITAU SA"
+    },
+
+    "14.0": {
+      "nome": "arquivo_data_de_geracao",
+      "posicao_inicio": 95,
+      "posicao_fim": 100,
+      "formato": "num"
+    },
+
+    "15.0": {
+      "nome": "brancos2",
+      "posicao_inicio": 101,
+      "posicao_fim": 394,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "16.0": {
+      "nome": "numero_sequencial",
+      "posicao_inicio": 395,
+      "posicao_fim": 400,
+      "formato": "num",
+      "default": 1
+    }
+  }
+}
