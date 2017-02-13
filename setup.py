@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='cnab240',
-    version='0.01',
+    version='0.1',
     author='Tracy Web Technologies',
     author_email='contato@tracy.com.br',
     url='https://github.com/TracyWebTech/cnab240',
