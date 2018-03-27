@@ -6,6 +6,7 @@ except ImportError:
     import unittest
 
 import os
+import codecs
 from cnab240 import errors
 from cnab240.bancos import santander
 from cnab240.tipos import Arquivo
@@ -36,7 +37,7 @@ class TestCnab240(unittest.TestCase):
     @unittest.skip
     def test_leitura_santander(self):
         return_file_path = os.path.join(ARQS_DIRPATH, 'cobranca.santander.ret')
-        ret_file = open(return_file_path, encoding='ascii')
+        ret_file = codecs.open(return_file_path, encoding='ascii')
         arquivo = Arquivo(santander, arquivo=ret_file)
 
         ret_file.seek(0)

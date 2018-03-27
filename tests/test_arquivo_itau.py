@@ -6,6 +6,7 @@ except ImportError:
     import unittest
 
 import os
+import codecs
 
 from cnab240 import errors
 from cnab240.bancos import itau
@@ -33,7 +34,7 @@ class TestCnab240(unittest.TestCase):
 
     def test_leitura_itau(self):
         return_file_path = os.path.join(ARQS_DIRPATH, 'cobranca.itau.ret')
-        ret_file = open(return_file_path, "rt", encoding='ascii')
+        ret_file = codecs.open(return_file_path, encoding='ascii')
         arquivo = Arquivo(itau, arquivo=ret_file)
 
         ret_file.seek(0)

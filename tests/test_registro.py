@@ -26,8 +26,8 @@ class TestRegistro(unittest.TestCase):
 
     def test_escrita_campo_num_decimal(self):
         # aceitar somente tipo Decimal
-        with self.assertRaises(errors.TipoError):
-            self.seg_p.valor_titulo = 10.0
+        with self.assertRaises(errors.NumDecimaisError):
+            self.seg_p.valor_titulo = '10.0'
         with self.assertRaises(errors.TipoError):
             self.seg_p.valor_titulo = ''
 
@@ -53,7 +53,7 @@ class TestRegistro(unittest.TestCase):
     def test_escrita_campo_num_int(self):
         # aceitar somente inteiros (int e long)
         with self.assertRaises(errors.TipoError):
-            self.header_arquivo.controle_banco = 10.0
+            self.header_arquivo.controle_banco = '10.0'
         with self.assertRaises(errors.TipoError):
             self.header_arquivo.controle_banco = ''
 

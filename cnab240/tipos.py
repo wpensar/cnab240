@@ -52,6 +52,7 @@ class Evento(object):
             segmento.servico_numero_registro = current_id
         return current_id
 
+
 class Lote(object):
 
     def __init__(self, banco, header=None, trailer=None):
@@ -80,7 +81,7 @@ class Lote(object):
     def atualizar_codigo_registros(self):
         last_id = 0
         for evento in self._eventos:       
-             last_id = evento.atualizar_codigo_registros(last_id) 
+            last_id = evento.atualizar_codigo_registros(last_id)
  
     @property
     def eventos(self):
@@ -101,7 +102,7 @@ class Lote(object):
         if not self._eventos:
             raise errors.NenhumEventoError()
     
-        result = [] 
+        result = list()
         result.append(str(self.header))
         result.extend(str(evento) for evento in self._eventos)
         result.append(str(self.trailer))
@@ -114,31 +115,29 @@ class Lote(object):
 class Arquivo(object):
 
     def __init__(self, banco, **kwargs):
-        """Arquivo Cnab240.""" 
+        """Arquivo Cnab240."""
 
         self._lotes = []
         self.banco = banco
         arquivo = kwargs.get('arquivo')
         if isinstance(arquivo, codecs.StreamReaderWriter):
-            return self.carregar_retorno(arquivo)
+            self.carregar_retorno(arquivo)
+        else:
+            self.header = self.banco.registros.HeaderArquivo(**kwargs)
+            self.trailer = self.banco.registros.TrailerArquivo(**kwargs)
+            self.trailer.totais_quantidade_lotes = 0
+            self.trailer.totais_quantidade_registros = 2
 
-        self.header = self.banco.registros.HeaderArquivo(**kwargs) 
-        self.trailer = self.banco.registros.TrailerArquivo(**kwargs)
-        self.trailer.totais_quantidade_lotes = 0        
-        self.trailer.totais_quantidade_registros = 2
-
-        if self.header.arquivo_data_de_geracao is None:
             now = datetime.now()
-            self.header.arquivo_data_de_geracao = int(now.strftime("%d%m%Y"))
+            if self.header.arquivo_data_de_geracao is None:
+                self.header.arquivo_data_de_geracao = int(now.strftime("%d%m%Y"))
 
-        # necessario pois o santander nao tem hora de geracao
-        try:
-            if self.header.arquivo_hora_de_geracao is None:
-                if now is None:
-                    now = datetime.now()
-                self.header.arquivo_hora_de_geracao = int(now.strftime("%H%M%S"))
-        except AttributeError:
-            pass
+            # necessario pois o santander nao tem hora de geracao
+            try:
+                if self.header.arquivo_hora_de_geracao is None:
+                    self.header.arquivo_hora_de_geracao = int(now.strftime("%H%M%S"))
+            except AttributeError:
+                pass
 
     def carregar_retorno(self, arquivo):
         
@@ -262,4 +261,3 @@ class Arquivo(object):
         # Adicionar elemento vazio para arquivo terminar com \r\n
         result.append('')
         return '\r\n'.join(result)
-

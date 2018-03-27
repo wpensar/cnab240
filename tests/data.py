@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import os
+import codecs
 from decimal import Decimal
 from cnab240.bancos import itau, santander
 from cnab240.tipos import Lote, Evento
@@ -12,9 +13,10 @@ print(ARQS_DIRPATH)
 
 def get_itau_data_from_file():
     itau_data = dict()
-    arquivo_remessa = open(os.path.join(ARQS_DIRPATH, 'cobranca.itau.rem'), "rt", encoding='ascii')
+    arquivo_remessa = codecs.open(os.path.join(ARQS_DIRPATH, 'cobranca.itau.rem'), encoding='ascii')
 
-    itau_data['remessa'] = arquivo_remessa.read()
+    str_aux = arquivo_remessa.read()
+    itau_data['remessa'] = str_aux
     arquivo_remessa.seek(0)
 
     itau_data['header_arquivo'] = itau.registros.HeaderArquivo()
@@ -115,8 +117,7 @@ def get_itau_data_from_dict():
 
 
 def get_itau_file_remessa():
-    arquivo_remessa = open(os.path.join(ARQS_DIRPATH,
-                                               'cobranca_dict.itau.rem'),  "rt", encoding='ascii')
+    arquivo_remessa = codecs.open(os.path.join(ARQS_DIRPATH, 'cobranca_dict.itau.rem'),  encoding='ascii')
     arquivo_data = arquivo_remessa.read()
     arquivo_remessa.close()
     return arquivo_data
@@ -124,8 +125,7 @@ def get_itau_file_remessa():
 
 def get_santander_data_from_file():
     santander_data = dict()
-    arquivo_remessa = open(os.path.join(ARQS_DIRPATH,
-                                               'cobranca.santander.rem'), "rt", encoding='ascii')
+    arquivo_remessa = codecs.open(os.path.join(ARQS_DIRPATH, 'cobranca.santander.rem'), encoding='ascii')
 
     santander_data['remessa'] = arquivo_remessa.read()
     arquivo_remessa.seek(0)

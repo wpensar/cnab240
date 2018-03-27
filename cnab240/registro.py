@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+import decimal
 import json
 import os
 from collections import OrderedDict
@@ -29,7 +29,7 @@ class CampoBase(object):
             if not isinstance(valor, Decimal):
                 try:
                     valor = Decimal(valor)
-                except TypeError:
+                except (TypeError, decimal.InvalidOperation):
                     raise errors.TipoError(self, valor)
 
             num_decimais = valor.as_tuple().exponent * -1
@@ -43,14 +43,14 @@ class CampoBase(object):
             if not isinstance(valor, int):
                 try:
                     valor = int(valor)
-                except TypeError:
+                except (TypeError, ValueError):
                     raise errors.TipoError(self, valor)
             if len(str(valor)) > self.digitos:
                 raise errors.NumDigitosExcedidoError(self, valor)
 
         self._valor = valor
 
-    def __unicode__(self):
+    def __str__(self):
         if self.valor is None:
             if self.default is not None:
                 if self.decimais:
