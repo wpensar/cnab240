@@ -208,6 +208,14 @@ class Arquivo(object):
         if seg_r.necessario():
             evento.adicionar_segmento(seg_r)
 
+        segmentos = ['S',]
+        for segmento in segmentos:
+            seg_x_class = getattr(self.banco.registros, 'Segmento{}'.format(segmento), None)
+            if seg_x_class is not None:
+                seg_x = seg_x_class(**kwargs)
+                if seg_x.necessario():
+                    evento.adicionar_segmento(seg_x)
+
         lote_cobranca = self.encontrar_lote(codigo_evento)
         
         if lote_cobranca is None:
