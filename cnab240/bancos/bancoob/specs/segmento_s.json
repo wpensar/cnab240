@@ -43,7 +43,8 @@
       "nome": "vazio1",
       "posicao_inicio": 15,
       "posicao_fim": 15,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     },
 
     "07.3S": {
@@ -65,7 +66,8 @@
       "nome": "informacao5",
       "posicao_inicio": 19,
       "posicao_fim": 58,
-      "formato": "num"
+      "formato": "alfa",
+      "default": ""
     },
 
     "10.3S": {
