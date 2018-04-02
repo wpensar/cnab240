@@ -6,7 +6,7 @@
       "posicao_inicio": 1,
       "posicao_fim": 3,
       "formato": "num",
-      "default": 341
+      "default": 756
     },
 
     "02.9": {
@@ -48,15 +48,15 @@
     },
 
     "07.9": {
-      "nome": "vazio2",
+      "nome": "totais_quantidade_contas",
       "posicao_inicio": 30,
       "posicao_fim": 35,
-      "formato": "alfa",
-      "default": ""
+      "formato": "num",
+      "default": 0
     },
 
     "08.9": {
-      "nome": "vazio3",
+      "nome": "vazio2",
       "posicao_inicio": 36,
       "posicao_fim": 240,
       "formato": "alfa",
