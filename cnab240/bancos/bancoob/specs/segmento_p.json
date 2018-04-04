@@ -218,7 +218,6 @@
       "default": 0
     },
 
-
     "30.3P": {
       "nome": "desconto1_codigo",
       "posicao_inicio": 142,
@@ -317,7 +316,7 @@
       "default": 0
     },
 
-    "43.3P": {
+    "42.3P": {
       "nome": "vazio6",
       "posicao_inicio": 240,
       "posicao_fim": 240,

@@ -126,7 +126,7 @@
     },
 
     "18.3Q": {
-      "nome": "sacado_inscricao_numero",
+      "nome": "sacador_inscricao_numero",
       "posicao_inicio": 155,
       "posicao_fim": 169,
       "formato": "num",
@@ -134,7 +134,7 @@
     },
 
     "19.3Q": {
-      "nome": "sacado_nome",
+      "nome": "sacador_nome",
       "posicao_inicio": 170,
       "posicao_fim": 209,
       "formato": "alfa",
