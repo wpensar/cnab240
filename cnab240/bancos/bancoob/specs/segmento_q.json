@@ -118,7 +118,7 @@
     },
 
     "17.3Q": {
-      "nome": "sacado_inscricao_tipo",
+      "nome": "sacador_inscricao_tipo",
       "posicao_inicio": 154,
       "posicao_fim": 154,
       "formato": "num",
