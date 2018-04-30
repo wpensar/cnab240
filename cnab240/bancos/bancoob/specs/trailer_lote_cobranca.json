@@ -82,7 +82,7 @@
     },
 
     "11.5": {
-      "nome": "cobrancacaucionada_quantidade_titulos",
+      "nome": "cobrancacaucionada_valor_titulos",
       "posicao_inicio": 76,
       "posicao_fim": 92,
       "formato": "num",
