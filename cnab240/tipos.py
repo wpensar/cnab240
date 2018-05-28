@@ -195,7 +195,7 @@ class Arquivo(object):
 
     def incluir_cobranca(self, **kwargs):
         # 1 eh o codigo de cobranca
-        codigo_evento = 1
+        codigo_evento = kwargs.get('servico_codigo_movimento', 1)
         evento = Evento(self.banco, codigo_evento) 
             
         seg_p = self.banco.registros.SegmentoP(**kwargs)
