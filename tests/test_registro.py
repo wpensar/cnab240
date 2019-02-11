@@ -9,7 +9,7 @@ from decimal import Decimal
 
 from cnab240 import errors
 from cnab240.bancos import itau
-from tests.data import get_itau_data_from_file
+from tests.data.itau_data import get_itau_data_from_file
 
 
 class TestRegistro(unittest.TestCase):

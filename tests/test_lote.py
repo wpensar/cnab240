@@ -6,7 +6,7 @@ except ImportError:
     import unittest
 
 from cnab240 import errors
-from tests.data import get_itau_data_from_file
+from tests.data.itau_data import get_itau_data_from_file
 
 
 class TestLote(unittest.TestCase):

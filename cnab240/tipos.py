@@ -208,7 +208,7 @@ class Arquivo(object):
         if seg_r.necessario():
             evento.adicionar_segmento(seg_r)
 
-        segmentos = ['S',]
+        segmentos = ['S']
         for segmento in segmentos:
             seg_x_class = getattr(self.banco.registros, 'Segmento{}'.format(segmento), None)
             if seg_x_class is not None:
