@@ -199,7 +199,7 @@
       "posicao_inicio": 118,
       "posicao_fim": 118,
       "formato": "num",
-      "default": 0
+      "default": 3
     },
 
     "28.3P": {
@@ -211,7 +211,7 @@
     },
 
     "29.3P": {
-      "nome": "juros_mora",
+      "nome": "juros_mora_taxa_dia",
       "posicao_inicio": 127,
       "posicao_fim": 141,
       "formato": "num",
@@ -293,7 +293,7 @@
     },
 
     "39.3P": {
-      "nome": "vazio5",
+      "nome": "prazo_baixa",
       "posicao_inicio": 225,
       "posicao_fim": 227,
       "formato": "alfa",

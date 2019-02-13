@@ -142,7 +142,7 @@
     },
 
     "20.3Q": {
-      "nome": "vazio2",
+      "nome": "banco_correspondente",
       "posicao_inicio": 210,
       "posicao_fim": 212,
       "formato": "num",
@@ -150,7 +150,7 @@
     },
 
     "21.3Q": {
-      "nome": "vazio3",
+      "nome": "numero_no_bancoCorrespondente",
       "posicao_inicio": 213,
       "posicao_fim": 232,
       "formato": "alfa",

@@ -210,14 +210,16 @@
       "nome": "juros_cod_mora",
       "posicao_inicio": 118,
       "posicao_fim": 118,
-      "formato": "num"
+      "formato": "num",
+      "default": 3
     },
 
     "28.3P": {
       "nome": "juros_mora_data",
       "posicao_inicio": 119,
       "posicao_fim": 126,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "29.3P": {
@@ -225,7 +227,8 @@
       "posicao_inicio": 127,
       "posicao_fim": 141,
       "formato": "num",
-      "decimais": 2
+      "decimais": 2,
+      "default": 0
     },
 
     "30.3P": {
@@ -256,7 +259,8 @@
       "nome": "valor_iof",
       "posicao_inicio": 166,
       "posicao_fim": 180,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "34.3P": {
@@ -264,7 +268,8 @@
       "posicao_inicio": 181,
       "posicao_fim": 195,
       "formato": "num",
-      "decimais": 2
+      "decimais": 2,
+      "default": 0
     },
 
     "35.3P": {
@@ -278,28 +283,32 @@
       "nome": "codigo_protesto",
       "posicao_inicio": 221,
       "posicao_fim": 221,
-      "formato": "num"
+      "formato": "num",
+      "default": 3
     },
 
     "37.3P": {
       "nome": "prazo_protesto",
       "posicao_inicio": 222,
       "posicao_fim": 223,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "38.3P": {
       "nome": "codigo_baixa",
       "posicao_inicio": 224,
       "posicao_fim": 224,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "39.3P": {
       "nome": "prazo_baixa",
       "posicao_inicio": 225,
       "posicao_fim": 227,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     },
 
     "40.3P": {
@@ -311,7 +320,7 @@
     },
 
     "41.3P": {
-      "nome": "vazio11",
+      "nome": "numero_contrato",
       "posicao_inicio": 230,
       "posicao_fim": 239,
       "formato": "num",
