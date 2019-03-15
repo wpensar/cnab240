@@ -86,7 +86,8 @@
       "nome": "cedente_agencia_conta_dv",
       "posicao_inicio": 37,
       "posicao_fim": 37,
-      "formato": "num"
+      "formato": "alfa",
+      "default": ""
     },
 
     "13.3P": {
@@ -199,7 +200,7 @@
       "posicao_inicio": 118,
       "posicao_fim": 118,
       "formato": "num",
-      "default": 3
+      "default": 0
     },
 
     "28.3P": {

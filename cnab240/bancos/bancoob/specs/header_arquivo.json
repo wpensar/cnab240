@@ -87,7 +87,8 @@
       "nome": "cedente_agencia_conta_dv",
       "posicao_inicio": 72,
       "posicao_fim": 72,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": "0"
     },
 
     "13.0": {
@@ -102,7 +103,7 @@
       "posicao_inicio": 103,
       "posicao_fim": 132,
       "formato": "alfa",
-      "default": "BANCO COOPERATIVO DO BRASIL SA"
+      "default": "SICOOB"
     },
 
     "15.0": {
