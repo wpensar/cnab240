@@ -6,7 +6,7 @@
       "posicao_inicio": 1,
       "posicao_fim": 3,
       "formato": "num",
-      "default": 756
+      "default": 1
     },
 
     "02.5": {
@@ -57,24 +57,23 @@
     },
 
     "08.5": {
-      "nome": "cobrancavinculada_quantidade_titulos",
+      "nome": "cobrancaCaucionada_quantidade_titulos",
       "posicao_inicio": 47,
       "posicao_fim": 52,
       "formato": "num",
-      "default": 0
+      "default": 1
     },
 
     "09.5": {
-      "nome": "cobrancavinculada_valor_titulos",
+      "nome": "cobrancaCaucionada_valor_titulos",
       "posicao_inicio": 53,
       "posicao_fim": 69,
       "formato": "num",
-      "decimais": 2,
       "default": 0
     },
 
-   "10.5": {
-      "nome": "cobrancacaucionada_quantidade_titulos",
+    "10.5": {
+      "nome": "total_desc_titulosCobranca",
       "posicao_inicio": 70,
       "posicao_fim": 75,
       "formato": "num",
@@ -82,7 +81,7 @@
     },
 
     "11.5": {
-      "nome": "cobrancacaucionada_valor_titulos",
+      "nome": "total_desc_titulosCarteira",
       "posicao_inicio": 76,
       "posicao_fim": 92,
       "formato": "num",
@@ -90,34 +89,16 @@
       "default": 0
     },
 
-
     "12.5": {
-      "nome": "cobrancadescontada_quantidade_titulos",
+      "nome": "vazio2",
       "posicao_inicio": 93,
-      "posicao_fim": 98,
-      "formato": "num",
-      "default": 0
-    },
-
-    "13.5": {
-      "nome": "cobrancadescontada_valor_titulos",
-      "posicao_inicio": 99,
-      "posicao_fim": 115,
-      "formato": "num",
-      "decimais": 2,
-      "default": 0
-    },
-
-    "14.5": {
-      "nome": "numero_aviso",
-      "posicao_inicio": 116,
       "posicao_fim": 123,
       "formato": "alfa",
       "default": ""
     },
 
-    "15.5": {
-      "nome": "vazio2",
+    "13.5": {
+      "nome": "vazio3",
       "posicao_inicio": 124,
       "posicao_fim": 240,
       "formato": "alfa",

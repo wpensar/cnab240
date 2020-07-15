@@ -6,7 +6,7 @@
       "posicao_inicio": 1,
       "posicao_fim": 3,
       "formato": "num",
-      "default": 756
+      "default": 104
     },
 
     "02.3U": {
@@ -40,7 +40,7 @@
     },
 
     "06.3U": {
-      "nome": "vazio1",
+      "nome": "servico_cnab_exclusivo",
       "posicao_inicio": 15,
       "posicao_fim": 15,
       "formato": "alfa",
@@ -103,21 +103,19 @@
     },
 
     "14.3U": {
-      "nome": "titulo_outras_despesas",
+      "nome": "outras_despesas",
       "posicao_inicio": 108,
       "posicao_fim": 122,
       "formato": "num",
-      "decimais": 2,
-      "default": 0
+      "decimais": 2
     },
 
     "15.3U": {
-      "nome": "titulo_outros_creditos",
+      "nome": "outros_creditos",
       "posicao_inicio": 123,
       "posicao_fim": 137,
       "formato": "num",
-      "decimais": 2,
-      "default": 0
+      "decimais": 2
     },
 
     "16.3U": {
@@ -135,55 +133,81 @@
     },
 
     "18.3U": {
-      "nome": "ocorrencia_codigo",
+      "nome": "numero_banco_sacados",
       "posicao_inicio": 154,
-      "posicao_fim": 157,
-      "formato": "alfa"
-    },
-
-    "19.3U": {
-      "nome": "ocorrencia_data",
-      "posicao_inicio": 158,
-      "posicao_fim": 165,
+      "posicao_fim": 156,
       "formato": "num"
     },
 
+    "19.3U": {
+      "nome": "nome_banco_sacados",
+      "posicao_inicio": 157,
+      "posicao_fim": 176,
+      "formato": "alfa"
+    },
+
     "20.3U": {
-      "nome": "ocorrencia_valor",
-      "posicao_inicio": 166,
-      "posicao_fim": 180,
-      "formato": "num",
-      "decimais": 2
+      "nome": "ajuste_vencimento",
+      "posicao_inicio": 177,
+      "posicao_fim": 177,
+      "formato": "alfa"
     },
 
     "21.3U": {
-      "nome": "ocorrencia_complemento",
+      "nome": "ajuste_emissao",
+      "posicao_inicio": 178,
+      "posicao_fim": 178,
+      "formato": "alfa"
+    },
+
+    "22.3U": {
+      "nome": "id_mod_bloqueto",
+      "posicao_inicio": 179,
+      "posicao_fim": 180,
+      "formato": "alfa"
+    },
+
+    "23.3U": {
+      "nome": "id_viaEntrega",
       "posicao_inicio": 181,
+      "posicao_fim": 181,
+      "formato": "alfa"
+    },
+
+    "24.3U": {
+      "nome": "especie_titulo",
+      "posicao_inicio": 182,
+      "posicao_fim": 183,
+      "formato": "alfa"
+    },
+
+    "25.3U": {
+      "nome": "id_aceite",
+      "posicao_inicio": 184,
+      "posicao_fim": 184,
+      "formato": "alfa"
+    },
+
+    "26.3U": {
+      "nome": "codigo_sacado_noBanco",
+      "posicao_inicio": 185,
+      "posicao_fim": 199,
+      "formato": "alfa"
+    },
+
+    "27.3U": {
+      "nome": "caixa_exclusivo",
+      "posicao_inicio": 200,
       "posicao_fim": 210,
       "formato": "alfa",
       "default": ""
     },
 
-    "22.3U": {
-      "nome": "banco_correspondente_codigo",
+    "28.3U": {
+      "nome": "cnab_exclusivo_campo28dot3U",
       "posicao_inicio": 211,
-      "posicao_fim": 213,
-      "formato": "num"
-    },
-
-    "23.3U": {
-      "nome": "banco_correspondente_nosso_numero",
-      "posicao_inicio": 214,
-      "posicao_fim": 233,
-      "formato": "num"
-    },
-
-    "24.3U": {
-      "nome": "vazio2",
-      "posicao_inicio": 234,
       "posicao_fim": 240,
-      "formato": "alfa",
-      "default": ""
+      "formato": "alfa"
     }
 
   }

@@ -6,11 +6,12 @@ except ImportError:
     import unittest
 
 import os
+import codecs
 
 from cnab240 import errors
 from cnab240.bancos import itau
 from cnab240.tipos import Arquivo
-from tests.data import get_itau_data_from_dict, get_itau_file_remessa, \
+from tests.data.itau_data import get_itau_data_from_dict, get_itau_file_remessa, \
     ARQS_DIRPATH
 
 
@@ -33,7 +34,7 @@ class TestCnab240(unittest.TestCase):
 
     def test_leitura_itau(self):
         return_file_path = os.path.join(ARQS_DIRPATH, 'cobranca.itau.ret')
-        ret_file = open(return_file_path, "rt", encoding='ascii')
+        ret_file = codecs.open(return_file_path, encoding='ascii')
         arquivo = Arquivo(itau, arquivo=ret_file)
 
         ret_file.seek(0)

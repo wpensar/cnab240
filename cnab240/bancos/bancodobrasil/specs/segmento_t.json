@@ -6,7 +6,7 @@
       "posicao_inicio": 1,
       "posicao_fim": 3,
       "formato": "num",
-      "default": 756
+      "default": 104
     },
 
     "02.3T": {
@@ -40,7 +40,7 @@
     },
 
     "06.3T": {
-      "nome": "vazio1",
+      "nome": "cnab_exclusivo_campo06dot3T",
       "posicao_inicio": 15,
       "posicao_fim": 15,
       "formato": "alfa",
@@ -55,14 +55,15 @@
     },
 
     "08.3T": {
-      "nome": "cedente_agencia",
+      "nome": "codigo_agencia_cod",
       "posicao_inicio": 18,
       "posicao_fim": 22,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "09.3T": {
-      "nome": "cedente_agencia_dv",
+      "nome": "codigo_agenvia_dv",
       "posicao_inicio": 23,
       "posicao_fim": 23,
       "formato": "num",
@@ -70,46 +71,77 @@
     },
 
     "10.3T": {
-      "nome": "cedente_conta",
+      "nome": "codigo_cedente",
       "posicao_inicio": 24,
-      "posicao_fim": 35,
+      "posicao_fim": 29,
       "formato": "num"
     },
 
     "11.3T": {
-      "nome": "cedente_conta_dv",
-      "posicao_inicio": 36,
-      "posicao_fim": 36,
+      "nome": "caixa_exclusivo_campo11dot3T",
+      "posicao_inicio": 30,
+      "posicao_fim": 32,
       "formato": "num",
       "default": 0
     },
 
-    "12.3T": {
-      "nome": "cedente_agencia_conta_dv",
-      "posicao_inicio": 37,
-      "posicao_fim": 37,
+    "11.3T2": {
+      "nome": "numero_banco_sacados",
+      "posicao_inicio": 33,
+      "posicao_fim": 35,
       "formato": "num"
+    },
+
+    "12.3T": {
+      "nome": "caixa_exclusivo_campo12dot3T",
+      "posicao_inicio": 36,
+      "posicao_fim": 39,
+      "formato": "num",
+      "default": 0
     },
 
     "13.3T": {
       "nome": "nosso_numero",
-      "posicao_inicio": 38,
+      "posicao_inicio": 40,
+      "posicao_fim": 41,
+      "formato": "num"
+    },
+
+    "13.3T": {
+      "nome": "nosso_numero_identificacao",
+      "posicao_inicio": 42,
+      "posicao_fim": 56,
+      "formato": "num"
+    },
+
+    "13.3T3": {
+      "nome": "caixa_exclusivo_campo13dot3T3",
+      "posicao_inicio": 57,
       "posicao_fim": 57,
-      "formato": "alfa"
+      "formato": "num",
+      "default": 0
     },
 
     "14.3T": {
-      "nome": "cobranca_carteira",
+      "nome": "carteira_cod",
       "posicao_inicio": 58,
       "posicao_fim": 58,
       "formato": "num"
-    },    
+    },
 
     "15.3T": {
       "nome": "numero_documento",
       "posicao_inicio": 59,
-      "posicao_fim": 73,
+      "posicao_fim": 69,
       "formato": "alfa"
+    },
+
+    "15.3T2": {
+      "nome": "caixa_exclusivo_campo15dot3T2",
+      "posicao_inicio": 70,
+      "posicao_fim": 73,
+      "formato": "alfa",
+      "default": ""
     },
 
     "16.3T": {
@@ -128,29 +160,28 @@
     },
 
     "18.3T": {
-      "nome": "banco_cobrador",
+      "nome": "banco_cobrador_recebedor",
       "posicao_inicio": 97,
       "posicao_fim": 99,
-      "formato": "num",
-      "default": 0
+      "formato": "num"
     },
 
     "19.3T": {
-      "nome": "agencia_cobradora",
+      "nome": "agencia_cobradora_recebedora",
       "posicao_inicio": 100,
       "posicao_fim": 104,
       "formato": "num"
     },
 
     "20.3T": {
-      "nome": "agencia_cobradora_dv",
+      "nome": "agencia_cobradora_recebedora_dv",
       "posicao_inicio": 105,
       "posicao_fim": 105,
       "formato": "num"
     },
 
     "21.3T": {
-      "nome": "identificacao_titulo",
+      "nome": "uso_empresa",
       "posicao_inicio": 106,
       "posicao_fim": 130,
       "formato": "alfa"
@@ -160,8 +191,7 @@
       "nome": "codigo_moeda",
       "posicao_inicio": 131,
       "posicao_fim": 132,
-      "formato": "num",
-      "default": 0
+      "formato": "num"
     },
 
     "23.3T": {
@@ -186,10 +216,10 @@
     },
 
     "26.3T": {
-      "nome": "numero_contrato",
+      "nome": "cnab_exclusivo_campo26dot3T",
       "posicao_inicio": 189,
       "posicao_fim": 198,
-      "formato": "num",
+      "formato": "alfa",
       "default": ""
     },
 
@@ -198,7 +228,7 @@
       "posicao_inicio": 199,
       "posicao_fim": 213,
       "formato": "num",
-      "decimais": 2
+      "decimais": 0
     },
 
     "28.3T": {
@@ -209,7 +239,7 @@
     },
 
     "29.3T": {
-      "nome": "vazio2",
+      "nome": "cnab_exclusivo_campo29dot3T",
       "posicao_inicio": 224,
       "posicao_fim": 240,
       "formato": "alfa",

@@ -6,7 +6,7 @@
       "posicao_inicio": 1,
       "posicao_fim": 3,
       "formato": "num",
-      "default": 756
+      "default": 1
     },
 
     "02.1": {
@@ -44,8 +44,8 @@
       "nome": "vazio1",
       "posicao_inicio": 12,
       "posicao_fim": 13,
-      "formato": "alfa",
-      "default": ""
+      "formato": "num",
+      "default": 0
     },
 
     "07.1": {
@@ -53,7 +53,7 @@
       "posicao_inicio": 14,
       "posicao_fim": 16,
       "formato": "num",
-      "default": 40
+      "default": 30
     },
 
     "08.1": {
@@ -79,12 +79,12 @@
     },
 
     "11.1": {
-      "nome": "cedente_convenio",
+      "nome": "codigo_convenio_banco",
       "posicao_inicio": 34,
       "posicao_fim": 53,
-      "formato": "alfa",
-      "default": ""
+      "formato": "alfa"
     },
+
 
     "12.1": {
       "nome": "cedente_agencia",
@@ -111,16 +111,15 @@
       "nome": "cedente_conta_dv",
       "posicao_inicio": 72,
       "posicao_fim": 72,
-      "formato": "alfa",
-      "default": ""
+      "formato": "num"
     },
 
     "16.1": {
-      "nome": "cedente_agencia_conta_dv",
+      "nome": "cedente_caixa_exclusivo_campo16dot1M",
       "posicao_inicio": 73,
       "posicao_fim": 73,
-      "formato": "alfa",
-      "default": ""
+      "formato": "num",
+      "default": 0
     },
 
     "17.1": {
@@ -131,7 +130,7 @@
     },
 
     "18.1": {
-      "nome": "informacao_1",
+      "nome": "informacao1",
       "posicao_inicio": 104,
       "posicao_fim": 143,
       "formato": "alfa",
@@ -139,7 +138,7 @@
     },
 
     "19.1": {
-      "nome": "informacao_2",
+      "nome": "informacao2",
       "posicao_inicio": 144,
       "posicao_fim": 183,
       "formato": "alfa",

@@ -9,7 +9,7 @@ from decimal import Decimal
 
 from cnab240 import errors
 from cnab240.bancos import itau
-from tests.data import get_itau_data_from_file
+from tests.data.itau_data import get_itau_data_from_file
 
 
 class TestRegistro(unittest.TestCase):
@@ -26,8 +26,8 @@ class TestRegistro(unittest.TestCase):
 
     def test_escrita_campo_num_decimal(self):
         # aceitar somente tipo Decimal
-        with self.assertRaises(errors.TipoError):
-            self.seg_p.valor_titulo = 10.0
+        with self.assertRaises(errors.NumDecimaisError):
+            self.seg_p.valor_titulo = '10.0'
         with self.assertRaises(errors.TipoError):
             self.seg_p.valor_titulo = ''
 
@@ -53,7 +53,7 @@ class TestRegistro(unittest.TestCase):
     def test_escrita_campo_num_int(self):
         # aceitar somente inteiros (int e long)
         with self.assertRaises(errors.TipoError):
-            self.header_arquivo.controle_banco = 10.0
+            self.header_arquivo.controle_banco = '10.0'
         with self.assertRaises(errors.TipoError):
             self.header_arquivo.controle_banco = ''
 
