@@ -121,7 +121,7 @@
       "nome": "nosso_numero_dv",
       "posicao_inicio": 57,
       "posicao_fim": 57,
-      "formato": "num"
+      "formato": "alfa"
     },
 
     "17.3P": {
@@ -161,7 +161,7 @@
       "posicao_inicio": 62,
       "posicao_fim": 62,
       "formato": "alfa",
-      "default": ""
+      "default": "2"
     },
 
     "22.3P": {
@@ -342,8 +342,8 @@
       "nome": "vazio6",
       "posicao_inicio": 230,
       "posicao_fim": 240,
-      "formato": "alfa",
-      "default": ""
+      "formato": "num",
+      "default": 0
     }
   }
 }

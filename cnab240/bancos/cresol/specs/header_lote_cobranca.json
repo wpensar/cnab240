@@ -84,7 +84,7 @@
       "nome": "cedente_convenio",
       "posicao_inicio": 34,
       "posicao_fim": 53,
-      "formato": "alfa",
+      "formato": "num",
       "default": "4950705"
     },
 
