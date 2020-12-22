@@ -216,6 +216,7 @@
       "posicao_inicio": 127,
       "posicao_fim": 141,
       "formato": "num",
+      "decimais": 2,
       "default": 0
     },
 

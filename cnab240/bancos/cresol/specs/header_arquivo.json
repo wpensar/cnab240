@@ -2,7 +2,7 @@
   "nome": "HeaderArquivo",
   "campos": {
     "01.0": {
-      "nome": "controle_banco",
+      "nome": "banco",
       "posicao_inicio": 1,
       "posicao_fim": 3,
       "formato": "num",
@@ -10,7 +10,7 @@
     },
 
     "02.0": {
-      "nome": "controle_lote",
+      "nome": "lote",
       "posicao_inicio": 4,
       "posicao_fim": 7,
       "formato": "num",
@@ -18,7 +18,7 @@
     },
 
     "03.0": {
-      "nome": "controle_registro",
+      "nome": "registro",
       "posicao_inicio": 8,
       "posicao_fim": 8,
       "formato": "num",
@@ -34,7 +34,7 @@
     },
 
     "05.0": {
-      "nome": "controle_cedente_inscricao_tipo",
+      "nome": "cedente_inscricao_tipo",
       "posicao_inicio": 18,
       "posicao_fim": 18,
       "formato": "num",
@@ -42,7 +42,7 @@
     },
 
     "06.0": {
-      "nome": "controle_cedente_inscricao_numero",
+      "nome": "cedente_inscricao_numero",
       "posicao_inicio": 19,
       "posicao_fim": 32,
       "formato": "num",
@@ -50,7 +50,7 @@
     },
 
     "07.0": {
-      "nome": "controle_cedente_convenio",
+      "nome": "cedente_convenio",
       "posicao_inicio": 33,
       "posicao_fim": 52,
       "formato": "num",
@@ -58,7 +58,7 @@
     },
 
     "08.0": {
-      "nome": "controle_cedente_agencia",
+      "nome": "cedente_agencia",
       "posicao_inicio": 53,
       "posicao_fim": 57,
       "formato": "num",
@@ -66,7 +66,7 @@
     },
 
     "09.0": {
-      "nome": "controle_cedente_agencia_dv",
+      "nome": "cedente_agencia_dv",
       "posicao_inicio": 58,
       "posicao_fim": 58,
       "formato": "num",
@@ -74,7 +74,7 @@
     },
 
     "10.0": {
-      "nome": "controle_cedente_conta",
+      "nome": "cedente_conta",
       "posicao_inicio": 59,
       "posicao_fim": 70,
       "formato": "num",
@@ -82,7 +82,7 @@
     },
 
     "11.0": {
-      "nome": "controle_cedente_conta_dv",
+      "nome": "cedente_conta_dv",
       "posicao_inicio": 71,
       "posicao_fim": 71,
       "formato": "alfa",
@@ -90,7 +90,7 @@
     },
 
     "12.0": {
-      "nome": "controle_cedente_agencia_conta_dv",
+      "nome": "cedente_agencia_conta_dv",
       "posicao_inicio": 72,
       "posicao_fim": 72,
       "formato": "alfa",
