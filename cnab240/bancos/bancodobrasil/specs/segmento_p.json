@@ -232,7 +232,7 @@
     },
 
     "30.3P": {
-      "nome": "desconto1_cod",
+      "nome": "desconto1_codigo",
       "posicao_inicio": 142,
       "posicao_fim": 142,
       "formato": "num",
