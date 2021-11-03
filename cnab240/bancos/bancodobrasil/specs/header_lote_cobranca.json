@@ -118,8 +118,8 @@
       "nome": "cedente_caixa_exclusivo_campo16dot1M",
       "posicao_inicio": 73,
       "posicao_fim": 73,
-      "formato": "num",
-      "default": 0
+      "formato": "alfa",
+      "default": ""
     },
 
     "17.1": {
