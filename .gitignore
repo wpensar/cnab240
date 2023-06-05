@@ -32,6 +32,9 @@ pip-log.txt
 *.json~
 *.txt~
 
+# History files
+.history
+
 include/
 lib/
 .venv
